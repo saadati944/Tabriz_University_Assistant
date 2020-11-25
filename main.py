@@ -1,3 +1,4 @@
 import graber
 
-input()
+
+print(graber.get_mainpage())
