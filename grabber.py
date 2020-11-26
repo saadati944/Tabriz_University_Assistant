@@ -11,3 +11,10 @@ def get_mainpage():
     req = requests.get(config.mainpage, data=config.headers)
     cookies = req.cookies
     return req.content.decode('utf-8')
+
+
+def login():
+    global cookies
+    req = requests.post(config.login_url, cookies=cookies, data=config.login_headers)
+    cookies = req.cookies
+    return req.content.decode('utf-8')
