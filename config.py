@@ -11,7 +11,7 @@ with open('./data.json', 'r') as f:
 mainpage = data["mainpage"]
 
 # http header to say the server that we are a browser in windows 10 so the server will not refuse the connection
-headers data["headers"]
+headers = data["headers"]
 
 # headers={}
 login_url = data["login_url"]

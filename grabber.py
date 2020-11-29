@@ -1,6 +1,7 @@
 # imports
 import requests
 import config
+import process
 
 cookies = None
 
@@ -15,6 +16,6 @@ def get_mainpage():
 
 def login():
     global cookies
-    req = requests.post(config.login_url, cookies=cookies, data=config.login_headers)
+    req = requests.post(config.login_url, cookies=cookies, data=config.login_headers20)
     cookies = req.cookies
     return req.content.decode('utf-8')

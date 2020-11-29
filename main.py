@@ -2,8 +2,8 @@ import grabber
 import config
 
 # print(grabber.get_mainpage())
-config.login_headers["ctl00$mainContent$UserName"] = input('enter username : ')
-config.login_headers["ctl00$mainContent$Password"] = config.login_headers["ctl00$mainContent$hdfPass"] = input(
+config.login_headers20["ctl00$mainContent$UserName"] = input('enter username : ')
+config.login_headers20["ctl00$mainContent$Password"] = config.login_headers20["ctl00$mainContent$hdfPass"] = input(
     'enter password : ')
 
 with open('file1.html', 'w', encoding='utf-8') as f:
